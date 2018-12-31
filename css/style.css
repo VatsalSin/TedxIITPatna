@@ -482,14 +482,20 @@ a {
     font-weight: 900;
     color: #f23a2e;
     font-size: 2.6rem; }
+  .site-blocks-cover h5 {
+    font-weight: 900;
+    color: #f23a2e;
+    text-shadow: 3px 3px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+    font-size: 1.6rem; }
     .site-blocks-cover h1 strong {
-      text-shadow: 3px 3px 0 #FCD6D6,-1px -1px 0 #FCD6D6,1px -1px 0 #FCD6D6,-1px 1px 0 #FCD6D6,1px 1px 0 #FCD6D6;
+      text-shadow: 3px 3px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
       font-weight: 900; }
     @media (min-width: 1000px) {
       .site-blocks-cover h1 {
         font-size: 4rem;
         font-weight: 300;
-        line-height: 1.2; } }
+        line-height: 1.2; }
+      }
   .site-blocks-cover p {
     color: #fff;
     font-size: 1.5rem;
