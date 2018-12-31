@@ -53,19 +53,24 @@
 
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
                       <li class="active"><a href="index.html">Home</a></li>
+                      <li class="has-children">
+                        <a href="#">About</a>
+                        <ul class="dropdown arrow-top">
+                          <li><a href="abt">About</a></li>
+                          <li><a href="team.html">Team</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <li class="has-children">
+                        <a href="#">Join US</a>
+                        <ul class="dropdown arrow-top">
+                          <li><a href="#">Become a Speaker</a></li>
+                          <li><a href="#">Become a Sponsor</a></li>
+                        </ul>
+                      </li>
                       <li><a href="#sch">Schedule</a></li>
                       <li><a href="#spk">Speakers</a></li>
-                      <li><a href="gallery.html">Gallery</a></li>
-                      <li><a href="team.html">Team</a></li>
                       <li><a href="#con">Contact</a></li>
-                      <!--<li class="has-children">
-                        <a href="#">More</a>
-                        <ul class="dropdown arrow-top">
-                          <li><a href="#">AAAA</a></li>
-                          <li><a href="#">BBBB</a></li>
-                          <li><a href="#">CCCC</a></li>
-                        </ul>
-                      </li>-->
                     </ul>
                   </div>
                 </nav>
@@ -76,52 +81,32 @@
       </div>
     </div>
   
-    <div class="middle">
-        <div class="time">
-            <span>
-                <div id="d">00</div>
-                Days
-            </span>
-            <span>
-                <div id="h">00</div>
-                Hours
-            </span>
-            <span>
-                <div id="m">00</div>
-                Minutes
-            </span>
-            <span>
-                <div id="s">00</div>
-                Seconds
-            </span>
+    <div id="countdown">
+        <div id='tiles'></div>
+        <div class="labels">
+            <li>Days</li>
+            <li>Hours</li>
+            <li>Mins</li>
+            <li>Secs</li>
         </div>
     </div>
         
       
-    <div class="slide-one-item home-slider owl-carousel" style="background: #000 ;">
+    <div class="slide-one-item home-slider owl-carousel" style="background-image: url(images/bg.jpeg); background-repeat: no-repeat; background-size: cover;">
       <div class="site-blocks-cover" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" data-aos="fade">
-                <h1><strong>Only you can change your life. No one can do it for you.</strong></h1>
+                <h1><strong>TEDx IIT PATNA</strong></h1>
+                <h5>X = INDEPENDENTLY ORGANISED TED EVENT</h5>
             </div>
           </div>
         </div>
-      </div>  
-
-      <div class="site-blocks-cover" data-aos="fade" data-stellar-background-ratio="0.5">  
-        <div class="container">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-md-7 text-center" data-aos="fade">
-                <h1><strong>Don't gamble on the future, act now, without delay.</strong></h1>
-            </div>
-          </div>
-        </div>
-      </div> 
+      </div>
     </div>
 
     <div class="block-schedule overlay site-section">
-      <div class="container">
+      <div class="container" id="abt">
 
         <div class="heading-with-border text-center">
           <h2 class="heading text-uppercase">About US</h2>
@@ -577,13 +562,15 @@
                 </div>
               </div>
 
-  
             </form>
           </div>
-
+          <div class="col-md-12 col-lg-12 mb-5">     
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14399.37835508978!2d84.8434447170254!3d25.54355318850096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d567a193702ff%3A0xc9c527c7faec3056!2sIIT+Patna+Administration+Block!5e0!3m2!1sen!2sin!4v1539177184721" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
+      
       <div class="site-navbar-wrap bg-white">
       <div class="site-navbar-top">
         <div class="container py-2">
