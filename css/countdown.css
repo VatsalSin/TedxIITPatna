@@ -1,0 +1,45 @@
+.middle {
+  z-index: 20;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  user-select: none;
+}
+
+.time {
+  color: #f23a2e;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+.time span {
+  padding: 0 14px;
+  font-size: 0.8rem;
+}
+
+.time span div {
+  font-size: 3rem;
+}
+
+@media (max-width: 740px) {
+  .time span {
+    padding: 0 16px;
+    font-size: 0.6rem;
+  }
+  .time span div {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .time span {
+    padding: 0 10px;
+    font-size: 0.4rem;
+  }
+  .time span div {
+    font-size: 1.6rem;
+  }
+}
