@@ -1,25 +1,33 @@
-    
-const comingdate = new Date("Mar 20, 2019 10:00:00");
+var target_date = new Date("Mar 20, 2019 10:00:00");
+var days, hours, minutes, seconds; // variables for time units
 
-const d = document.getElementById("d");
-const h = document.getElementById("h");
-const m = document.getElementById("m");
-const s = document.getElementById("s");
+var countdown = document.getElementById("tiles"); // get tag element
 
-let countdown = setInterval(() => {
-  const now   = new Date();
-  const des   = comingdate.getTime() - now.getTime();
-  const days  = Math.floor(des / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((des % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const mins  = Math.floor((des % (1000 * 60 * 60)) / (1000 * 60));
-  const secs  = Math.floor((des % (1000 * 60)) / 1000);
+getCountdown();
 
-  d.innerHTML = getTrueNumber(days);
-  h.innerHTML = getTrueNumber(hours);
-  m.innerHTML = getTrueNumber(mins);
-  s.innerHTML = getTrueNumber(secs);
+setInterval(function () { getCountdown(); }, 1000);
 
-  if (countdown <= 0) clearInterval(countdown);
-}, 1000);
+function getCountdown(){
 
-const getTrueNumber = x => (x < 10 ? "0" + x : x);
+	// find the amount of "seconds" between now and target
+	var current_date = new Date().getTime();
+	var seconds_left = (target_date - current_date) / 1000;
+
+	days = pad( parseInt(seconds_left / 86400) );
+	seconds_left = seconds_left % 86400;
+		 
+	hours = pad( parseInt(seconds_left / 3600) );
+	seconds_left = seconds_left % 3600;
+		  
+	minutes = pad( parseInt(seconds_left / 60) );
+	seconds = pad( parseInt( seconds_left % 60 ) );
+
+	// format countdown string + set tag value
+	countdown.innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>"; 
+}
+
+function pad(n) {
+	return (n < 10 ? '0' : '') + n;
+}
+
+
