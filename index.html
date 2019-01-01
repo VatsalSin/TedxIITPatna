@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -16,16 +16,16 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/countdown.css" >
-    
+
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-  
+
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
-    
+
   </head>
   <body  style="background: #FCD6D6;">
-  
+
   <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -36,9 +36,9 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
-    
+
     <div class="site-navbar-wrap bg-white">
-      
+
       <div class="container">
         <div class="site-navbar bg-light">
           <div class="py-1">
@@ -53,19 +53,24 @@
 
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
                       <li class="active"><a href="index.html">Home</a></li>
+                      <li class="has-children">
+                        <a href="#">About</a>
+                        <ul class="dropdown arrow-top">
+                          <li><a href="abt">About</a></li>
+                          <li><a href="team.html">Team</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <li class="has-children">
+                        <a href="#">Join US</a>
+                        <ul class="dropdown arrow-top">
+                          <li><a href="speaker.html">Become a Speaker</a></li>
+                          <li><a href="#">Become a Sponsor</a></li>
+                        </ul>
+                      </li>
                       <li><a href="#sch">Schedule</a></li>
                       <li><a href="#spk">Speakers</a></li>
-                      <li><a href="gallery.html">Gallery</a></li>
-                      <li><a href="team.html">Team</a></li>
                       <li><a href="#con">Contact</a></li>
-                      <!--<li class="has-children">
-                        <a href="#">More</a>
-                        <ul class="dropdown arrow-top">
-                          <li><a href="#">AAAA</a></li>
-                          <li><a href="#">BBBB</a></li>
-                          <li><a href="#">CCCC</a></li>
-                        </ul>
-                      </li>-->
                     </ul>
                   </div>
                 </nav>
@@ -75,53 +80,33 @@
         </div>
       </div>
     </div>
-  
-    <div class="middle">
-        <div class="time">
-            <span>
-                <div id="d">00</div>
-                Days
-            </span>
-            <span>
-                <div id="h">00</div>
-                Hours
-            </span>
-            <span>
-                <div id="m">00</div>
-                Minutes
-            </span>
-            <span>
-                <div id="s">00</div>
-                Seconds
-            </span>
+
+    <div id="countdown">
+        <div id='tiles'></div>
+        <div class="labels">
+            <li>Days</li>
+            <li>Hours</li>
+            <li>Mins</li>
+            <li>Secs</li>
         </div>
     </div>
-        
-      
-    <div class="slide-one-item home-slider owl-carousel" style="background: #000 ;">
+
+
+    <div class="slide-one-item home-slider owl-carousel" style="background-image: url(images/bg.jpeg); background-repeat: no-repeat; background-size: cover;">
       <div class="site-blocks-cover" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" data-aos="fade">
-                <h1><strong>Only you can change your life. No one can do it for you.</strong></h1>
+                <h1><strong>TEDx IIT PATNA</strong></h1>
+                <h5>X = INDEPENDENTLY ORGANISED TED EVENT</h5>
             </div>
           </div>
         </div>
-      </div>  
-
-      <div class="site-blocks-cover" data-aos="fade" data-stellar-background-ratio="0.5">  
-        <div class="container">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-md-7 text-center" data-aos="fade">
-                <h1><strong>Don't gamble on the future, act now, without delay.</strong></h1>
-            </div>
-          </div>
-        </div>
-      </div> 
+      </div>
     </div>
 
     <div class="block-schedule overlay site-section">
-      <div class="container">
+      <div class="container" id="abt">
 
         <div class="heading-with-border text-center">
           <h2 class="heading text-uppercase">About US</h2>
@@ -150,8 +135,8 @@
             </div>
         </div>
     </div>
-    
-    
+
+
 
         <div class="tab-pane fade" id="pills-monday" role="tabpanel" aria-labelledby="pills-monday-tab">
           <div class="container">
@@ -174,13 +159,13 @@
            </div>
         </div>
         </div>
-      </div>      
+      </div>
     </div>
 
       <div class="site-section block-14">
 
       <div class="container">
-        
+
         <div class="heading-with-border text-center">
           <h2 class="heading text-uppercase">What's New..?</h2>
         </div>
@@ -227,7 +212,7 @@
         </div>
 
       </div>
-      
+
     </div>
 
 
@@ -250,9 +235,9 @@
             <a class="nav-link" id="pills-tuesday-tab" data-toggle="pill" href="#pills-tuesday1" role="tab" aria-controls="pills-tuesday" aria-selected="false" style="color: black;">Day 3</a>
           </li>
         </ul>
-          
-          
-          
+
+
+
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-sunday1" role="tabpanel" aria-labelledby="pills-sunday-tab">
             <div class="row-wrap">
@@ -260,7 +245,7 @@
                 <div class="col-sm-3 col-md-3 col-lg-3"><h3 class="h5">Workshop N</h3></div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-clock-o mr-3"></span>8:00am &mdash; 10:00am</div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-person mr-3"></span>Senate Hall, IITP</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>     
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>
               </div>
             </div>
             <div class="row-wrap">
@@ -268,7 +253,7 @@
                 <div class="col-sm-3 col-md-3 col-lg-3"><h3 class="h5">Details</h3></div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-clock-o mr-3"></span>8:00am &mdash; 10:00am</div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-person mr-3"></span>Senate Hall, IITP</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>     
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>
               </div>
             </div>
             <div class="row-wrap">
@@ -276,20 +261,20 @@
                 <div class="col-sm-3 col-md-3 col-lg-3"><h3 class="h5">Speak of X</h3></div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-clock-o mr-3"></span>8:00am &mdash; 10:00am</div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-person mr-3"></span>Senate Hall, IITP</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>     
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>
               </div>
             </div>
 
           </div>
 
           <div class="tab-pane fade" id="pills-monday1" role="tabpanel" aria-labelledby="pills-monday-tab">
-            
+
             <div class="row-wrap">
               <div class="row bg-white p-4 align-items-center">
                 <div class="col-sm-3 col-md-3 col-lg-3"><h3 class="h5">Workshop M</h3></div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-clock-o mr-3"></span>8:00am &mdash; 10:00am</div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-person mr-3"></span>Senate Hall, IITP</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>     
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>
               </div>
             </div>
             <div class="row-wrap">
@@ -297,7 +282,7 @@
                 <div class="col-sm-3 col-md-3 col-lg-3"><h3 class="h5">Lecture on B</h3></div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-clock-o mr-3"></span>8:00am &mdash; 10:00am</div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-person mr-3"></span>Senate Hall, IITP</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>     
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>
               </div>
             </div>
             <div class="row-wrap">
@@ -305,20 +290,20 @@
                 <div class="col-sm-3 col-md-3 col-lg-3"><h3 class="h5">Speak of Y</h3></div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-clock-o mr-3"></span>8:00am &mdash; 10:00am</div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-person mr-3"></span>Senate Hall, IITP</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>     
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>
               </div>
             </div>
-              
+
         </div>
-            
+
         <div class="tab-pane fade" id="pills-tuesday1" role="tabpanel" aria-labelledby="pills-monday-tab">
-            
+
             <div class="row-wrap">
               <div class="row bg-white p-4 align-items-center">
                 <div class="col-sm-3 col-md-3 col-lg-3"><h3 class="h5">Workshop O</h3></div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-clock-o mr-3"></span>8:00am &mdash; 10:00am</div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-person mr-3"></span>Senate Hall, IITP</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>     
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>
               </div>
             </div>
             <div class="row-wrap">
@@ -326,7 +311,7 @@
                 <div class="col-sm-3 col-md-3 col-lg-3"><h3 class="h5">Lecture on C</h3></div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-clock-o mr-3"></span>8:00am &mdash; 10:00am</div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-person mr-3"></span>Senate Hall, IITP</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>     
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>
               </div>
             </div>
             <div class="row-wrap">
@@ -334,22 +319,22 @@
                 <div class="col-sm-3 col-md-3 col-lg-3"><h3 class="h5">Speak of Z</h3></div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-clock-o mr-3"></span>8:00am &mdash; 10:00am</div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-person mr-3"></span>Senate Hall, IITP</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>     
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>
               </div>
             </div>
-              
-          </div>
 
           </div>
 
-      </div>      
+          </div>
+
+      </div>
     </div>
 
 
     <div class="site-section" id="spk">
 
       <div class="container">
-        
+
         <div class="heading-with-border text-center mb-5">
           <h2 class="heading text-uppercase">Speakers</h2>
         </div>
@@ -368,7 +353,7 @@
                     <a href="#" class="p-2"><span class="icon-instagram"></span></a>
                   </p>
                 </div>
-              </div>    
+              </div>
             </div>
             <div class="col-lg-4 mb-4">
               <div class="block-trainer">
@@ -397,7 +382,7 @@
                     <a href="#" class="p-2"><span class="icon-instagram"></span></a>
                   </p>
                 </div>
-              </div>    
+              </div>
             </div>
             <div class="col-lg-4 mb-4">
               <div class="block-trainer">
@@ -445,7 +430,7 @@
           </div>
       </div>
     </div>
-      
+
         <div class="border-bottom">
       <div class="row no-gutters">
         <div class="col-md-6 col-lg-3">
@@ -470,7 +455,7 @@
           <div class="w-100 h-100 block-feature p-5 ">
             <span class="d-block mb-3">
               <span class="flaticon-boxing-gloves display-4"></span>
-            </span>            
+            </span>
             <h2>SSSS</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat iure eveniet perferendis odit est.</p>
           </div>
@@ -489,13 +474,13 @@
 
     <div class="featured-classes py-5 block-13">
       <div class="container">
-        
+
         <div class="heading-with-border text-center">
           <h2 class="heading text-uppercase">Sponsors</h2>
         </div>
 
         <div class="nonloop-block-13 owl-carousel">
-          
+
           <div class="block-media-1 heading-with-border bg-white">
             <img src="images/img_1.jpg" alt="Image" class="img-fluid">
             <div class="p-4">
@@ -529,18 +514,18 @@
       </div>
     </div>
 
-    
+
     <div class="site-section" id="con">
       <div class="container">
-     
+
         <div class="heading-with-border text-center mb-5">
           <h2 class="heading text-uppercase">Contact US</h2>
         </div>
 
         <div class="row">
-       
+
           <div class="col-md-12 col-lg-12 mb-5">
-          
+
             <form action="#" class="p-5 bg-white">
 
               <div class="row form-group">
@@ -566,7 +551,7 @@
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <label class="font-weight-bold" for="message">Message</label> 
+                  <label class="font-weight-bold" for="message">Message</label>
                   <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Your Doubts/Suggestions"></textarea>
                 </div>
               </div>
@@ -577,13 +562,15 @@
                 </div>
               </div>
 
-  
             </form>
           </div>
-
+          <div class="col-md-12 col-lg-12 mb-5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14399.37835508978!2d84.8434447170254!3d25.54355318850096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d567a193702ff%3A0xc9c527c7faec3056!2sIIT+Patna+Administration+Block!5e0!3m2!1sen!2sin!4v1539177184721" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
+
       <div class="site-navbar-wrap bg-white">
       <div class="site-navbar-top">
         <div class="container py-2">
@@ -611,7 +598,7 @@
       </div>
     </div>
   </div>
-  
+
     <footer class="site-footer" >
       <div class="container text-center">
         <p>
@@ -620,7 +607,7 @@
       </div>
     </footer>
 
-    
+
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
@@ -634,6 +621,6 @@
   <script src="js/aos.js"></script>
   <script src="js/countdown.js" type="text/javascript"></script>
   <script src="js/main.js"></script>
-    
+
   </body>
 </html>
