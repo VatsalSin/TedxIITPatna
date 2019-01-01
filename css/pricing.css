@@ -1,9 +1,11 @@
 /* Pricing Ticket */
 #pricing {
-  background: url(../img/background/bg-pricing.jpg);
+  background: url(../images/tedx_speaker.jpeg);
   background-attachment: fixed;
   overflow: hidden;
   position: relative;
+  background-repeat: no-repeat; 
+   background-size: 100% 100%;
 }
 
 #pricing .section-title-header .section-title {
