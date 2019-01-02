@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -16,15 +16,25 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/countdown.css" >
-    
+
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-  
+
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
-    
-  </head>
+
+    <link rel="stylesheet" href="css/pricing.css">
+</head>
   <body  style="background: #FCD6D6;">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   
   <div class="site-wrap">
 
@@ -36,20 +46,20 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
-    
+
     <div class="site-navbar-wrap bg-white">
-      
+
       <div class="container">
         <div class="site-navbar bg-light">
           <div class="py-1">
             <div class="row align-items-center">
               <div class="col-2">
-                <h2 class="mb-0 site-logo"><a href="index.html"><strong>TEDX</strong>IITP </a></h2>
+                <h2 class="mb-0 site-logo"><a href="index.html"><img src="images/logo.png"></a></h2>
               </div>
               <div class="col-10">
                 <nav class="site-navigation text-right" role="navigation">
                   <div class="container">
-                    <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+                    <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white-opacity-5"><span class="icon-menu h3"></span></a></div>
 
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
                       <li class="active"><a href="index.html">Home</a></li>
@@ -64,7 +74,7 @@
                       <li class="has-children">
                         <a href="#">Join US</a>
                         <ul class="dropdown arrow-top">
-                          <li><a href="#">Become a Speaker</a></li>
+                          <li><a href="speaker.html">Become a Speaker</a></li>
                           <li><a href="#">Become a Sponsor</a></li>
                         </ul>
                       </li>
@@ -80,7 +90,7 @@
         </div>
       </div>
     </div>
-  
+
     <div id="countdown">
         <div id='tiles'></div>
         <div class="labels">
@@ -90,9 +100,10 @@
             <li>Secs</li>
         </div>
     </div>
-        
-      
+
+
     <div class="slide-one-item home-slider owl-carousel" style="background-image: url(images/bg.jpeg); background-repeat: no-repeat; background-size: cover;">
+
       <div class="site-blocks-cover" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center">
@@ -103,6 +114,7 @@
           </div>
         </div>
       </div>
+
     </div>
 
     <div class="block-schedule overlay site-section">
@@ -131,12 +143,20 @@
                 </div>
                 <div class="col-md-12 col-lg-4 ml-auto">
                     <img src="images/ted.jpeg" alt="Image" class="img-fluid">
+                     <div class="fb-page" data-href="https://www.facebook.com/tedxiitpatna" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/tedxiitpatna" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/tedxiitpatna">TEDx IITPatna</a></blockquote>
+                      </div>
+                    <div class="fb-embed">
+                      <strong>Like Us On Facebook</strong>
+                    </div>
+                      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftedxiitpatna&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>                
+                     
+   
                 </div>
             </div>
         </div>
     </div>
-    
-    
+
+
 
         <div class="tab-pane fade" id="pills-monday" role="tabpanel" aria-labelledby="pills-monday-tab">
           <div class="container">
@@ -154,18 +174,24 @@
             </div>
             <div class="col-md-12 col-lg-4 ml-auto">
               <img src="images/ted.jpeg" alt="Image" class="img-fluid">
+               <div class="fb-page" data-href="https://www.facebook.com/tedxiitpatna" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/tedxiitpatna" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/tedxiitpatna">TEDx IITPatna</a></blockquote>
+              </div>
+              <div class="fb-embed">
+                <strong>Like Us On Facebook</strong>
+              </div>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftedxiitpatna&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>    
             </div>
             </div>
            </div>
         </div>
         </div>
-      </div>      
+      </div>
     </div>
 
       <div class="site-section block-14">
 
       <div class="container">
-        
+
         <div class="heading-with-border text-center">
           <h2 class="heading text-uppercase">What's New..?</h2>
         </div>
@@ -212,7 +238,7 @@
         </div>
 
       </div>
-      
+
     </div>
 
 
@@ -235,9 +261,9 @@
             <a class="nav-link" id="pills-tuesday-tab" data-toggle="pill" href="#pills-tuesday1" role="tab" aria-controls="pills-tuesday" aria-selected="false" style="color: black;">Day 3</a>
           </li>
         </ul>
-          
-          
-          
+
+
+
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-sunday1" role="tabpanel" aria-labelledby="pills-sunday-tab">
             <div class="row-wrap">
@@ -245,7 +271,7 @@
                 <div class="col-sm-3 col-md-3 col-lg-3"><h3 class="h5">Workshop N</h3></div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-clock-o mr-3"></span>8:00am &mdash; 10:00am</div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-person mr-3"></span>Senate Hall, IITP</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>     
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>
               </div>
             </div>
             <div class="row-wrap">
@@ -253,7 +279,7 @@
                 <div class="col-sm-3 col-md-3 col-lg-3"><h3 class="h5">Details</h3></div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-clock-o mr-3"></span>8:00am &mdash; 10:00am</div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-person mr-3"></span>Senate Hall, IITP</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>     
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>
               </div>
             </div>
             <div class="row-wrap">
@@ -261,20 +287,20 @@
                 <div class="col-sm-3 col-md-3 col-lg-3"><h3 class="h5">Speak of X</h3></div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-clock-o mr-3"></span>8:00am &mdash; 10:00am</div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-person mr-3"></span>Senate Hall, IITP</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>     
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>
               </div>
             </div>
 
           </div>
 
           <div class="tab-pane fade" id="pills-monday1" role="tabpanel" aria-labelledby="pills-monday-tab">
-            
+
             <div class="row-wrap">
               <div class="row bg-white p-4 align-items-center">
                 <div class="col-sm-3 col-md-3 col-lg-3"><h3 class="h5">Workshop M</h3></div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-clock-o mr-3"></span>8:00am &mdash; 10:00am</div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-person mr-3"></span>Senate Hall, IITP</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>     
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>
               </div>
             </div>
             <div class="row-wrap">
@@ -282,7 +308,7 @@
                 <div class="col-sm-3 col-md-3 col-lg-3"><h3 class="h5">Lecture on B</h3></div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-clock-o mr-3"></span>8:00am &mdash; 10:00am</div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-person mr-3"></span>Senate Hall, IITP</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>     
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>
               </div>
             </div>
             <div class="row-wrap">
@@ -290,20 +316,20 @@
                 <div class="col-sm-3 col-md-3 col-lg-3"><h3 class="h5">Speak of Y</h3></div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-clock-o mr-3"></span>8:00am &mdash; 10:00am</div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-person mr-3"></span>Senate Hall, IITP</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>     
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>
               </div>
             </div>
-              
+
         </div>
-            
+
         <div class="tab-pane fade" id="pills-tuesday1" role="tabpanel" aria-labelledby="pills-monday-tab">
-            
+
             <div class="row-wrap">
               <div class="row bg-white p-4 align-items-center">
                 <div class="col-sm-3 col-md-3 col-lg-3"><h3 class="h5">Workshop O</h3></div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-clock-o mr-3"></span>8:00am &mdash; 10:00am</div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-person mr-3"></span>Senate Hall, IITP</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>     
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>
               </div>
             </div>
             <div class="row-wrap">
@@ -311,7 +337,7 @@
                 <div class="col-sm-3 col-md-3 col-lg-3"><h3 class="h5">Lecture on C</h3></div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-clock-o mr-3"></span>8:00am &mdash; 10:00am</div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-person mr-3"></span>Senate Hall, IITP</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>     
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>
               </div>
             </div>
             <div class="row-wrap">
@@ -319,24 +345,24 @@
                 <div class="col-sm-3 col-md-3 col-lg-3"><h3 class="h5">Speak of Z</h3></div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-clock-o mr-3"></span>8:00am &mdash; 10:00am</div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="icon-person mr-3"></span>Senate Hall, IITP</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>     
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0">Details</a></div>
               </div>
             </div>
-              
-          </div>
 
           </div>
 
-      </div>      
+          </div>
+
+      </div>
     </div>
 
 
-    <div class="site-section" id="spk">
+    <div class="site-sect" id="pricing">
 
       <div class="container">
-        
+
         <div class="heading-with-border text-center mb-5">
-          <h2 class="heading text-uppercase">Speakers</h2>
+          <h2 class="heading text-uppercase" style="color:yellow; font-size:34px"><strong>Speakers</strong></h2>
         </div>
 
           <div class="row">
@@ -353,7 +379,7 @@
                     <a href="#" class="p-2"><span class="icon-instagram"></span></a>
                   </p>
                 </div>
-              </div>    
+              </div>
             </div>
             <div class="col-lg-4 mb-4">
               <div class="block-trainer">
@@ -382,7 +408,7 @@
                     <a href="#" class="p-2"><span class="icon-instagram"></span></a>
                   </p>
                 </div>
-              </div>    
+              </div>
             </div>
             <div class="col-lg-4 mb-4">
               <div class="block-trainer">
@@ -430,7 +456,7 @@
           </div>
       </div>
     </div>
-      
+
         <div class="border-bottom">
       <div class="row no-gutters">
         <div class="col-md-6 col-lg-3">
@@ -455,7 +481,7 @@
           <div class="w-100 h-100 block-feature p-5 ">
             <span class="d-block mb-3">
               <span class="flaticon-boxing-gloves display-4"></span>
-            </span>            
+            </span>
             <h2>SSSS</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat iure eveniet perferendis odit est.</p>
           </div>
@@ -474,13 +500,13 @@
 
     <div class="featured-classes py-5 block-13">
       <div class="container">
-        
+
         <div class="heading-with-border text-center">
           <h2 class="heading text-uppercase">Sponsors</h2>
         </div>
 
         <div class="nonloop-block-13 owl-carousel">
-          
+
           <div class="block-media-1 heading-with-border bg-white">
             <img src="images/img_1.jpg" alt="Image" class="img-fluid">
             <div class="p-4">
@@ -514,18 +540,18 @@
       </div>
     </div>
 
-    
+
     <div class="site-section" id="con">
       <div class="container">
-     
+
         <div class="heading-with-border text-center mb-5">
           <h2 class="heading text-uppercase">Contact US</h2>
         </div>
 
         <div class="row">
-       
+
           <div class="col-md-12 col-lg-12 mb-5">
-          
+
             <form action="#" class="p-5 bg-white">
 
               <div class="row form-group">
@@ -551,7 +577,7 @@
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <label class="font-weight-bold" for="message">Message</label> 
+                  <label class="font-weight-bold" for="message">Message</label>
                   <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Your Doubts/Suggestions"></textarea>
                 </div>
               </div>
@@ -562,15 +588,17 @@
                 </div>
               </div>
 
+
             </form>
           </div>
-          <div class="col-md-12 col-lg-12 mb-5">     
+
+          <div class="col-md-12 col-lg-12 mb-5">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14399.37835508978!2d84.8434447170254!3d25.54355318850096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d567a193702ff%3A0xc9c527c7faec3056!2sIIT+Patna+Administration+Block!5e0!3m2!1sen!2sin!4v1539177184721" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
-      
+
       <div class="site-navbar-wrap bg-white">
       <div class="site-navbar-top">
         <div class="container py-2">
@@ -598,7 +626,7 @@
       </div>
     </div>
   </div>
-  
+
     <footer class="site-footer" >
       <div class="container text-center">
         <p>
@@ -607,7 +635,7 @@
       </div>
     </footer>
 
-    
+
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
@@ -621,6 +649,6 @@
   <script src="js/aos.js"></script>
   <script src="js/countdown.js" type="text/javascript"></script>
   <script src="js/main.js"></script>
-    
+
   </body>
 </html>
