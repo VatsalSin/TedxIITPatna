@@ -87,6 +87,17 @@ a {
 
 .bg-black {
   background: #000; }
+.fb-embed {
+  margin-top: 50px;
+  text-align: center;
+  color: #f23a2e;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.fb-embed:hover {
+  text-decoration: underline;
+}
 
 .form-control {
   height: 47px; }
@@ -184,7 +195,7 @@ a {
 
 /* Navbar */
 .site-navbar-wrap {
-  background: #f23a2e !important;
+  background: #1f1f1f !important;
   position: relative;
   z-index: 99;
   width: 100%; }
@@ -200,7 +211,7 @@ a {
   margin-bottom: 0px;
   width: 100%;
   border-bottom: none;
-  background: #f23a2e !important; }
+  background: #1f1f1f !important; }
   .site-navbar .site-logo {
     font-weight: 200; }
     .site-navbar .site-logo a {
