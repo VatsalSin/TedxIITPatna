@@ -272,3 +272,15 @@ jQuery(document).ready(function($) {
 	siteDatePicker();
 
 });
+
+ window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  document.querySelector('.site-logo img').setAttribute('src','images/logo3.PNG');
+
+  } else {
+      document.querySelector('.site-logo img').setAttribute('src','images/logo.PNG');
+
+  }
+}
