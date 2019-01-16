@@ -88,7 +88,7 @@ a {
 .bg-black {
   background: #000; }
 .fb-embed {
-  margin-top: 50px;
+  margin-top: 0;
   text-align: center;
   color: #f23a2e;
   font-size: 24px;
