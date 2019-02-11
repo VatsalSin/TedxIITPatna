@@ -37,7 +37,7 @@ body {
 }
 
 
-hr { width: 400px;
+hr { max-width: 400px;
 	border-top: 1px solid #f8f8f8;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 
@@ -147,6 +147,7 @@ hr { width: 400px;
     color: #fff;
 }
 
+
 .thumbnail {
 	background-color: #fff;
 	height: 250px;
@@ -165,7 +166,7 @@ hr { width: 400px;
 }
 
 .setbackground {
-	background-image: url(../images/bkgroundctg.jpg);
+	background-image: linear-gradient(to right, rgb(83, 105, 118),rgb(41, 46, 73)); 
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -279,10 +280,40 @@ body{
 	padding-bottom:50%;
 }
 
-@media only screen (min-width: 768px){
-	#categories li p {
-		font-size: 1.5em;
+@media (max-width: 400px){
+  .sp-why {
+    padding: 10px 0;
+
+  }
+
+  #categories li h1 {
+    font-size: 1em;
+  }
+	#categories li div p {
+		font-size: .75em;
 	}
+
+
+
+  .site-logo img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 300px){
+  .site-logo img {
+    width: 170px;
+  }
+
+}
+
+@media (min-width: 950px){
+   #categories li h1 {
+    font-size: 2.5em;
+  }
+  #categories li div p {
+    font-size: 2em;
+  }
 }
 
 /* HOVER EFFECT  */
