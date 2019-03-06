@@ -122,12 +122,13 @@ hr { max-width: 400px;
 .sp-why {
 	text-align: center;
 	padding: 20px 0;
-	background-color: #FCD6D6;
+	background-color: rgba(243,58,46,0.7);
 	width: 100%;
-	color: #f23a2e;
-	border-bottom: 2px solid rgba(31,31,31,0.5);
-	border-top: 2px solid rgba(31,31,31,0.5);
-	font-family: 'Coiny', cursive;
+	color: #f1f1f1;
+	border-bottom: 2px solid #f1f1f1;
+	border-top: 2px solid #f1f1f1;
+	font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
 }
 
 
@@ -143,8 +144,9 @@ hr { max-width: 400px;
     transform:translateY(-5px);
     -webkit-box-shadow:0 1rem 2rem rgba(0,0,0,0.5);
     box-shadow:0 1rem 2rem rgba(0,0,0,0.5);
-    background-color: rgba(166,215,133,0.5);
+    background-color: rgba(31,31,31,0.7);
     color: #fff;
+    border: none;
 }
 
 
@@ -155,6 +157,7 @@ hr { max-width: 400px;
 	border: 3px solid #d3d3d3;
 	border-radius: 5%;
 	margin: 30px auto;
+  transition-duration: .5s;
 }
 
 .caption p {
@@ -166,10 +169,9 @@ hr { max-width: 400px;
 }
 
 .setbackground {
-	background-image: linear-gradient(to right, rgb(83, 105, 118),rgb(41, 46, 73)); 
-	background-size: cover;
-	background-attachment: fixed;
+	background-color: #FCD6D6;
 }
+
 
 body{
   font-family: 'Open Sans', arial, sans-serif;
@@ -249,7 +251,7 @@ body{
 #categories div h1, #categories div p{
   width:90%;
   padding:0 5%;
-  background-color:#efa2a2; background-color: rgba(239, 162, 162, 0.8);
+  background-color:#1F1F1F; background-color: rgba(31, 31, 31, 0.7);
   font-family: 'Raleway', sans-serif;
   
   -webkit-transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
