@@ -1,6 +1,6 @@
 .sp-main {
 	padding-top: 100px;
-	background-color: #FCD6D6;
+	background-color: #F1EEEE;;
 	background-image: url(../images/bkground.jpg);
 	height: 700px;
 	background-size: cover;
@@ -122,7 +122,7 @@ hr { max-width: 400px;
 .sp-why {
 	text-align: center;
 	padding: 20px 0;
-	background-color: rgba(243,58,46,0.7);
+	background-color: #1f1f1f;
 	width: 100%;
 	color: #f1f1f1;
 	border-bottom: 2px solid #f1f1f1;
@@ -169,13 +169,13 @@ hr { max-width: 400px;
 }
 
 .setbackground {
-	background-color: #FCD6D6;
+	background-color: #F1EEEE;;
 }
 
 
 body{
   font-family: 'Open Sans', arial, sans-serif;
-  background-color: #FCD6D6;
+  background-color: #F1EEEE;;
 
 }
 *{

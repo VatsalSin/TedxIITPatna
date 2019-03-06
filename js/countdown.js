@@ -1,4 +1,4 @@
-var target_date = new Date("Mar 20, 2019 10:00:00");
+var target_date = new Date("Sep 1, 2019 10:00:00");
 var days, hours, minutes, seconds; // variables for time units
 
 var countdown = document.getElementById("tiles"); // get tag element
