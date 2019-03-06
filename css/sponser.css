@@ -1,6 +1,6 @@
 .sp-main {
 	padding-top: 100px;
-	background-color: #FCD6D6;
+	background-color: #F1EEEE;;
 	background-image: url(../images/bkground.jpg);
 	height: 700px;
 	background-size: cover;
@@ -37,7 +37,7 @@ body {
 }
 
 
-hr { width: 400px;
+hr { max-width: 400px;
 	border-top: 1px solid #f8f8f8;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 
@@ -46,13 +46,13 @@ hr { width: 400px;
 
 .btn,.btn:link,.btn:visited{text-transform:uppercase;
   text-decoration:none;
-  padding:1.5rem 4rem;
+  padding:1.3rem 3rem;
   display:inline-block;
   border-radius:10rem;
   -webkit-transition:all .2s;
   transition:all .2s;
   position:relative;
-  font-size:1.6rem;
+  font-size:1.3rem;
   border:none;
   cursor:pointer}
 
@@ -122,12 +122,13 @@ hr { width: 400px;
 .sp-why {
 	text-align: center;
 	padding: 20px 0;
-	background-color: #FCD6D6;
+	background-color: #1f1f1f;
 	width: 100%;
-	color: #f23a2e;
-	border-bottom: 2px solid rgba(31,31,31,0.5);
-	border-top: 2px solid rgba(31,31,31,0.5);
-	font-family: 'Coiny', cursive;
+	color: #f1f1f1;
+	border-bottom: 2px solid #f1f1f1;
+	border-top: 2px solid #f1f1f1;
+	font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
 }
 
 
@@ -143,9 +144,11 @@ hr { width: 400px;
     transform:translateY(-5px);
     -webkit-box-shadow:0 1rem 2rem rgba(0,0,0,0.5);
     box-shadow:0 1rem 2rem rgba(0,0,0,0.5);
-    background-color: rgba(166,215,133,0.5);
+    background-color: rgba(31,31,31,0.7);
     color: #fff;
+    border: none;
 }
+
 
 .thumbnail {
 	background-color: #fff;
@@ -154,6 +157,7 @@ hr { width: 400px;
 	border: 3px solid #d3d3d3;
 	border-radius: 5%;
 	margin: 30px auto;
+  transition-duration: .5s;
 }
 
 .caption p {
@@ -165,14 +169,13 @@ hr { width: 400px;
 }
 
 .setbackground {
-	background-image: url(../images/bkgroundctg.jpg);
-	background-size: cover;
-	background-attachment: fixed;
+	background-color: #F1EEEE;;
 }
+
 
 body{
   font-family: 'Open Sans', arial, sans-serif;
-  background-color: #FCD6D6;
+  background-color: #F1EEEE;;
 
 }
 *{
@@ -248,7 +251,7 @@ body{
 #categories div h1, #categories div p{
   width:90%;
   padding:0 5%;
-  background-color:#efa2a2; background-color: rgba(239, 162, 162, 0.8);
+  background-color:#1F1F1F; background-color: rgba(31, 31, 31, 0.7);
   font-family: 'Raleway', sans-serif;
   
   -webkit-transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
@@ -279,10 +282,40 @@ body{
 	padding-bottom:50%;
 }
 
-@media only screen (min-width: 768px){
-	#categories li p {
-		font-size: 1.5em;
+@media (max-width: 400px){
+  .sp-why {
+    padding: 10px 0;
+
+  }
+
+  #categories li h1 {
+    font-size: 1em;
+  }
+	#categories li div p {
+		font-size: .75em;
 	}
+
+
+
+  .site-logo img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 300px){
+  .site-logo img {
+    width: 170px;
+  }
+
+}
+
+@media (min-width: 950px){
+   #categories li h1 {
+    font-size: 2.5em;
+  }
+  #categories li div p {
+    font-size: 2em;
+  }
 }
 
 /* HOVER EFFECT  */

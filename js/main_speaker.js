@@ -1,4 +1,5 @@
 
+
 (function ($) {
     "use strict";
 
@@ -67,7 +68,7 @@
 
     /*==================================================================
     [ Show / hide Form ]*/
-    
+    /*
     $('.contact100-btn-hide').on('click', function(){
         $('.wrap-contact100').fadeOut(400);
     })
@@ -77,3 +78,4 @@
     })
 
 })(jQuery);
+*/
