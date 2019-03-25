@@ -1,2 +1,2 @@
 # TedxIITPatna
-Website for TedxIITPatna. TedxIITPatna will be held in late March
+Website for TedxIITPatna. TedxIITPatna will be held in early september.
