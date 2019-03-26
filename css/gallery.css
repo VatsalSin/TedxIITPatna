@@ -1,59 +1,58 @@
-
 .tz-gallery {
-    padding: 40px;
+  padding: 40px;
 }
 
 /* Override bootstrap column paddings */
 .tz-gallery .row > div {
-    padding: 2px;
+  padding: 2px;
 }
 
 .tz-gallery .lightbox img {
-    width: 100%;
-    height: auto;
-    border-radius: 0;
-    position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  position: relative;
 }
 
 .tz-gallery .lightbox:before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -13px;
-    margin-left: -13px;
-    opacity: 0;
-    color: #fff;
-    font-size: 26px;
-    font-family: 'Glyphicons Halflings';
-/*    content: '\e003';*/
-    pointer-events: none;
-    z-index: 9000;
-    transition: 0.4s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -13px;
+  margin-left: -13px;
+  opacity: 0;
+  color: #fff;
+  font-size: 26px;
+  font-family: "Glyphicons Halflings";
+  /*    content: '\e003';*/
+  pointer-events: none;
+  z-index: 9000;
+  transition: 0.4s;
 }
 
 .tz-gallery .lightbox:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background-color: rgba(31, 31, 31, 0.7);
-    content: '';
-    transition: 0.4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(31, 31, 31, 0.7);
+  content: "";
+  transition: 0.4s;
 }
 
 .tz-gallery .lightbox:hover:after,
 .tz-gallery .lightbox:hover:before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .baguetteBox-button {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
-@media(max-width: 768px) {
-    body {
-        padding: 0;
-    }
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
 }
