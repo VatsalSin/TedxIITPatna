@@ -147,6 +147,7 @@ hr {
 }
 
 .sp-why {
+  letter-spacing: 1px;
   text-align: center;
   padding: 20px 0;
   background-color: #1f1f1f;
@@ -172,14 +173,23 @@ hr {
   border: none;
 }
 
+.thumbnail:hover h3 {
+  color: #fff;
+}
+
+.thumbnail:hover p {
+  color: #fff;
+}
+
 .thumbnail {
   background-color: #fff;
   height: 250px;
   line-height: 150%;
-  border: 3px solid #d3d3d3;
+  border: 3px solid rgba(31, 31, 31, 0.7);
   border-radius: 5%;
   margin: 30px auto;
-  transition-duration: 0.5s;
+  transition: all 0.3s ease-in-out;
+  color: rgba(31, 31, 31, 0.7);
 }
 
 .caption p {
@@ -187,11 +197,22 @@ hr {
 }
 
 .thumbnail h1 {
+  font-size: 40px;
   padding: 6px 0;
 }
 
+.thumbnail h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.thumbnail p {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
 .setbackground {
-  background-color: #f1eeee;
+  background-color: #d4cfcf;
 }
 
 body {
