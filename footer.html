@@ -56,7 +56,10 @@
     @media (max-width: 550px) {
       .footer .one i {
         font-size: 1em;
-        margin: 5px;
+        margin: 15px !important;
+        color: #fff;
+        transition: 0.5s;
+
       }
 
       .footer .two i {
@@ -72,31 +75,77 @@
       }
 
       .footer .two a {
+        margin-right: 20px;
+        font-size: 1.2em;
+        color: #fff;
+      }
+      .footer .one i:hover {
+        transform: rotateY(360deg);
+        color: #f23a2e;
         margin-right: 10px;
         font-size: 1em;
       }
 
       .footer .two a:hover i {
-        transform: translateY(0px) rotateY(540deg);
-        color: #26cc3a;
+        transform: translateY(5px) rotateY(540deg);
+        color: #f23a2e;
       }
-    }
+      @media (max-width: 550px) {
+        .footer .one i {
+          font-size: 1em;
+          margin: 5px;
+        }
+        .footer .two i {
+          font-size: 0.5em;
+          margin: 5px;
+          transform: translateY(0px) rotateY(180deg);
+          transition: 0.5s;
+        }
+        .footer h5 {
+          font-size: 0.6em;
+          padding-bottom: 10px;
+        }
+        .footer .two a {
+          margin-right: 10px;
+          font-size: 1em;
+        }
+        .footer .two a:hover i {
+          transform: translateY(0px) rotateY(540deg);
+          color: #f23a2e;
+        }
+      }
+      hr {
+        border-style: inset;
+        border-width: 0.6px;
+        border-color: rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="footer">
+      <div class="container">
+        <div class="one d-flex flex-row justify-content-center">
+          <a href="https://www.facebook.com/tedxiitpatna/" target="_blank"
+            ><i class="fab fa-facebook-f m-2"></i
+          ></a>
+          <a href="https://www.instagram.com/tedxiitpatna/" target="_blank"
+            ><i class="fab fa-instagram m-2"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/tedxiitpatna/"
+            target="_blank"
+            ><i class="fab fa-linkedin m-2"></i
+          ></a>
+          <a href=" https://twitter.com/TEDxIITPatna" target="_blank"
+            ><i class="fab fa-twitter m-2"></i
+          ></a>
+        </div>
+        <div class="two d-flex flex-row justify-content-center">
+          <a href="mailto:tedxiitpatna@gmail.com"
+            ><i class="fas fa-envelope"></i> tedxiitpatna@gmail.com</a
+          >
+        </div>
 
-    hr {
-      border-style: inset;
-      border-width: 0.6px;
-      border-color: rgba(0, 0, 0, 0.3);
-    }
-  </style>
-</head>
-<body>
-  <div class="footer">
-    <div class="container">
-      <div class="one d-flex flex-row justify-content-center">
-        <a href="https://www.facebook.com/tedxiitpatna/" target="_blank"><i class="fab fa-facebook-f m-2"></i></a>
-        <a href="https://www.instagram.com/tedxiitpatna/" target="_blank"><i class="fab fa-instagram m-2"></i></a>
-        <a href="https://www.linkedin.com/company/tedxiitpatna/" target="_blank"><i class="fab fa-linkedin m-2"></i></a>
-        <a href=" https://twitter.com/TEDxIITPatna" target="_blank"><i class="fab fa-twitter m-2"></i></a>
       </div>
       <div class="two d-flex flex-row justify-content-center">
         <a href="mailto:tedxiitpatna@gmail.com"><i class="fas fa-envelope"></i>tedxiitpatna@gmail.com</a>
