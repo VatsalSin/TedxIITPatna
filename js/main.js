@@ -281,7 +281,6 @@ function scrollFunction() {
 
   } else {
       document.querySelector('.site-logo img').setAttribute('src','images/logo.PNG');
-
   }
 }
 
