@@ -1709,9 +1709,10 @@ a:hover {
 .block-trainer .block-trainer-overlay {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
   padding: 20px;
   text-align: center;
   -webkit-transition: 0.3s all ease;
@@ -1719,6 +1720,7 @@ a:hover {
   transition: 0.3s all ease;
   visibility: hidden;
   opacity: 0;
+  width: 100%;
 }
 .block-trainer .block-trainer-overlay h2 {
   font-size: 20px;
