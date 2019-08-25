@@ -1875,12 +1875,16 @@ a:hover {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: all .5s ease;
   background-color: rgba(31,31,31,0.7);
 }
 
 .hv:hover .effect {
   opacity: 1;
+}
+
+.hv:hover .namespons {
+  animation: upgo .5s;
 }
 
 .texthv {
@@ -1896,3 +1900,20 @@ a:hover {
   text-transform: uppercase;
 }
 
+.namespons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 40px;
+  padding: 10px 15px;
+  color: white;
+}
+
+.namespons a {
+  color: white;
+}
+
+@keyframes upgo {
+  0%   { transform: translateY(50%);}
+  100% { transform: translateY(0);}
+}
