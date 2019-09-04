@@ -23,7 +23,7 @@ function getCountdown(){
 	seconds = pad( parseInt( seconds_left % 60 ) );
 
 	// format countdown string + set tag value
-	countdown.innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>"; 
+	countdown.innerHTML = "<span>" + "00" + "</span><span>" + "00" + "</span><span>" + "00" + "</span><span>" + "00" + "</span>"; 
 }
 
 function pad(n) {
